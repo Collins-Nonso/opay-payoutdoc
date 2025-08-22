@@ -21,7 +21,7 @@ const SideNav = ({ sidebarOpen, toggleSidebar }) => {
   return (
     <aside
       className={`fixed top-15 left-0 z-10 h-full transition-all duration-200 ease-in-out w-80 xl:w-80
-        ${theme === "dark" ? "dark bg-slate-900 text-gray-200" : "bg-[#F9FBFC] text-slate-900"}
+        ${theme === "dark" ? "dark bg-[#0D0D0D] text-gray-300" : "bg-[#F9FBFC] text-slate-900"}
         ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} 
         xl:translate-x-0`} >
 

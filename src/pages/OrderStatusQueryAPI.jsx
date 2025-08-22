@@ -3,7 +3,7 @@ import RightBar from "../components/RightBar";
 import { LinkIcon } from "../assets/images/icons";
 import { useTheme } from "../context/ThemeContext";
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { dracula, xt256 } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 const AccordionItem = ({ title, id, children }) => {
   const [isOpen, setIsOpen] = useState(true);
@@ -358,7 +358,7 @@ const OrderStatusQueryAPI = () => {
                   </div>
                 )}
 
-                <SyntaxHighlighter language="java" style={dracula} customStyle={{ borderRadius: '0.5rem', paddingTop: '2.5rem' }}>
+                <SyntaxHighlighter language="JSON" style={xt256} customStyle={{ borderRadius: '0.5rem', paddingTop: '2.5rem' }}>
                   {codeString}
                 </SyntaxHighlighter>
               </div>

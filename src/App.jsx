@@ -20,7 +20,7 @@ const AppContent = ({ sidebarOpen, toggleSidebar, setSidebarOpen }) => {
   }, [location.pathname]);
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${theme === 'dark' ? 'dark bg-slate-900 text-gray-200' : 'bg-[#F9FBFC] text-slate-900'}`}>
+    <div className={`min-h-screen transition-colors duration-300 ${theme === 'dark' ? 'dark bg-[#0D0D0D] text-gray-300' : 'bg-[#F9FBFC] text-slate-900'}`}>
       {sidebarOpen && (
         <div
           className="fixed inset-0 z-10 bg-gray-800 opacity-80 xl:hidden"
@@ -31,7 +31,7 @@ const AppContent = ({ sidebarOpen, toggleSidebar, setSidebarOpen }) => {
       <SideNav sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
       <main className="xl:pt-20 md:pt-15 min-xl:mr-115 md:mr-0 px-5 xl:ml-80 transition-all duration-200 min-sm:pt-16 max-sm:pt-16 pb-50">
         <Routes>
-          <Route path="/" element={<Introduction />} />
+          <Route path="/opay-payoutdoc/" element={<Introduction />} />
           <Route path="/start-here" element={<StartHere />} />
           <Route path="/post-man" element={<PostMan />} />
           <Route path="/payout-integration-process" element={<PayoutIntegrationProcess />} />

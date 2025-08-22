@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { dracula, xt256 } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 const SignatureSample = () => {
   useEffect(() => {
@@ -77,7 +77,7 @@ public static boolean verify(String data, String publicKey, String sign) throws 
             </div>
           )}
 
-          <SyntaxHighlighter language="java" style={dracula} customStyle={{ borderRadius: '0.5rem', paddingTop: '2.5rem' }}>
+          <SyntaxHighlighter language="java" style={xt256} customStyle={{ borderRadius: '0.5rem', paddingTop: '2.5rem' }}>
             {codeString}
           </SyntaxHighlighter>
         </div>

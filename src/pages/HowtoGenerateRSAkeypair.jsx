@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { dracula, xt256 } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 const HowtoGenerateRSAkeypair = () => {
   useEffect(() => {
@@ -105,7 +105,7 @@ const HowtoGenerateRSAkeypair = () => {
 
               <SyntaxHighlighter
                 language="bash"
-                style={dracula}
+                style={xt256}
                 customStyle={{ borderRadius: '0.5rem', paddingTop: '2.5rem' }}
               >
                 {item.codeBlock}

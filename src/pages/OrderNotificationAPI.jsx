@@ -4,7 +4,7 @@ import { LinkIcon } from "../assets/images/icons";
 import { OPayVerifySignature } from "../assets/images/account";
 import { useTheme } from "../context/ThemeContext";
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { anOldHope, dracula, xt256 } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 const AccordionItem = ({ title, id, children }) => {
   const [isOpen, setIsOpen] = useState(true);
@@ -82,8 +82,8 @@ const OrderNotificationAPI = () => {
     "transactionId": "240218515666064406256",
     "updated_at": "2024-02-18T01:51:50Z"
     },
-    "sha512": "983bfa5c79f67541b94333e73492c448ad644f75f739f766b314a4f682eb978aee2ee7f324b058f1af7e3ba7249d6b386fc472b5d8d1af492ad5996e77fd4321",
-    "type": "transaction-status"
+    sha512": "983bfa5c79f67541b94333e73492c448ad644f75f739f766b314a4f682eb978aee2ee7f324b058f1af7e3ba7249d6b386fc472b5d8d1af492ad5996e77fd4321",
+    type": "transaction-status"
   }`;
 
   const handleCopy = async () => {
@@ -427,7 +427,7 @@ const OrderNotificationAPI = () => {
                   </div>
                 )}
 
-                <SyntaxHighlighter language="java" style={dracula} customStyle={{ borderRadius: '0.5rem', paddingTop: '2.5rem' }}>
+                <SyntaxHighlighter language="JSON" style={xt256} customStyle={{ borderRadius: '0.5rem', paddingTop: '2.5rem' }}>
                   {codeString}
                 </SyntaxHighlighter>
               </div>

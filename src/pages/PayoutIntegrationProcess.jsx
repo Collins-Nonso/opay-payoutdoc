@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useTheme } from "../context/ThemeContext";
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { dracula, xt256 } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 const AccordionItem = ({ title, id, children }) => {
   const [isOpen, setIsOpen] = useState(true);
@@ -45,9 +45,9 @@ const PayoutIntegrationProcess = () => {
 
   const [copied, setCopied] = useState(false);
 
-  const codeString = `OPay Test IP Address: 119.13.76.156
+  const codeString = `"OPay Test IP Address": 119.13.76.156
   
-OPay Live IP Address: 159.138.170.59`;
+"OPay Live IP Address": 159.138.170.59`;
 
   const handleCopy = async () => {
     try {
@@ -118,7 +118,7 @@ OPay Live IP Address: 159.138.170.59`;
                 </div>
               )}
 
-              <SyntaxHighlighter language="java" style={dracula} customStyle={{ borderRadius: '0.5rem', paddingTop: '2.5rem' }}>
+              <SyntaxHighlighter language="JSON" style={xt256} customStyle={{ borderRadius: '0.5rem', paddingTop: '2.5rem' }}>
                 {codeString}
               </SyntaxHighlighter>
             </div>

@@ -12,9 +12,9 @@ const TopNav = ({ toggleSidebar }) => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <header className={`w-full px-5 py-2 z-10 fixed h-15 shadow transition-colors ${theme === 'dark' ? 'dark bg-slate-900 text-gray-200' : 'bg-[#F9FBFC] text-slate-900'}`}>
+    <header className={`w-full px-5 py-2 z-10 fixed h-15 shadow transition-colors ${theme === 'dark' ? 'dark bg-[#0D0D0D] text-gray-300' : 'bg-[#F9FBFC] text-slate-900'}`}>
       <nav className="flex justify-between items-center md:mt-1 xl:m-auto">
-        <a href="/">
+        <a href="/opay-payoutdoc/">
           <img src={OPayLogo} alt="Opay Logo" className="w-24" />
         </a>
 

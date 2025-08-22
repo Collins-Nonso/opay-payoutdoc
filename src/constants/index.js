@@ -17,7 +17,7 @@ export const SideNavLinks = [
         iconClosed: IonIcons.IoChevronForward,
         iconOpen: IonIcons.IoChevronDown,
         subNav: [
-            { title: "Introduction", path: "/", iconURL: FaIcons.FaIndustry },
+            { title: "Introduction", path: "/opay-payoutdoc/", iconURL: FaIcons.FaIndustry },
             { title: "Start Here", path: "/start-here", iconURL: FaIcons.FaHammer },
             { title: "Post Man", path: "/post-man", iconURL: FaIcons.FaPooStorm }
         ]

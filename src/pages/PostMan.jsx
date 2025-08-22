@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import RightBar from '../components/RightBar';
 import { pHome, pRegister, pSignin, pDownload, pRequestMethod, pHeader, pRequestBody, pSuccess, } from '../assets/images/postman';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { dracula, xt256 } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 const introNavLinks = [
   { id: 'postman-home', label: 'Step One' },
@@ -226,8 +226,8 @@ const PostMan = () => {
                         )}
 
                         <SyntaxHighlighter
-                          language="bash"
-                          style={dracula}
+                          language="JSON"
+                          style={xt256}
                           customStyle={{ borderRadius: '0.5rem', paddingTop: '2.5rem' }}
                         >
                           {block.value}

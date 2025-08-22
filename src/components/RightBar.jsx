@@ -4,7 +4,7 @@ import { useTheme } from "../context/ThemeContext";
 
 const RightBar = ({ navLinks = [] }) => {
   const [activeId, setActiveId] = useState("");
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
